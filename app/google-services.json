@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "91574725207",
+    "project_id": "eventsguidemobileapp",
+    "storage_bucket": "eventsguidemobileapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91574725207:android:d78af90b3b9c7b2fce5112",
+        "android_client_info": {
+          "package_name": "com.l2101600074.eventguideapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrs6FC5Px5CVYEZQ8LaeTWZa0lRQFOaj0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

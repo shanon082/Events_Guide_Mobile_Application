@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home"
+        android:checked="true"
+        android:iconTint="@color/priblue"
+        android:title="Home"
+        android:icon="@drawable/baseline_add_home_24"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/manager"
+        android:title="Manager"
+        android:checked="true"
+        android:iconTint="@color/priblue"
+        android:icon="@drawable/manager_gray"/>
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:title="Account"
+        android:checked="true"
+        android:iconTint="@color/priblue"
+        android:id="@+id/account"
+        android:icon="@drawable/account_gray"/>
+</menu>

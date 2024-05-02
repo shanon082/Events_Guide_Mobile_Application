@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".HomeFragement">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:id="@+id/layout1"
+    android:layout_marginTop="18dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_weight="3"
+        android:layout_marginTop="1dp"
+        android:textAlignment="textStart"
+        android:textColor="@color/priblue"
+        android:textStyle="bold"
+        android:textSize="35sp"/>
+
+    <ImageButton
+        android:id="@+id/profilePic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/circular_background"
+        android:src="@drawable/person"
+        android:focusable="true"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout2"
+        android:layout_below="@id/layout1"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:layout_marginVertical="@dimen/activity_horizontal_margin"
+            android:background="@drawable/custom_edittext"
+            android:hint="Search by category"
+            android:drawableStart="@drawable/baseline_search_24"
+            android:paddingLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/notificationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_notifications_active_24"
+            android:layout_margin="8dp"/>
+
+        <include
+            layout="@layout/badge_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/notificationIcon"
+            android:layout_marginStart="-12dp"
+            android:layout_marginTop="-12dp"/>
+
+
+    </LinearLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:id="@+id/scroll"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:scrollIndicators="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="All"
+                    android:backgroundTint="@color/priblue"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Sports"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/priblue"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="festivals"
+                    android:backgroundTint="@color/priblue"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Concerts"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/priblue"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Conferences"
+                    android:backgroundTint="@color/priblue"
+                    android:layout_marginRight="10dp"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="party"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/priblue"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="meetings"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="@color/priblue"/>
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/scroll"
+        android:layout_marginTop="32dp"
+        android:numColumns="2" />
+
+
+</RelativeLayout>

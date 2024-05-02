@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".ProceedBook">
+
+    <ImageButton
+        android:id="@+id/arrow_back52"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtview12"
+        android:layout_below="@id/arrow_back52"
+        android:text="Enter your Phone Number"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EditPhone"
+        android:hint="+2567xxxx"
+        android:layout_below="@id/txtview12"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/priblue"
+        android:text="OK"
+        android:id="@+id/Okbtn"
+        android:textSize="30sp"
+        android:paddingLeft="50dp"
+        android:onClick="onClick"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

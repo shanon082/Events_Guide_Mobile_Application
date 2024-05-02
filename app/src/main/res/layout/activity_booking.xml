@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context=".Booking">
+
+    <ImageButton
+        android:id="@+id/arrow_back5"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:onClick="onClick"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_arrow_back_24" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview32"
+        android:text="Enter the details below to complete the booking."
+        android:layout_below="@+id/arrow_back5"
+        android:textSize="25sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textname"
+        android:layout_below="@id/textview32"
+        android:text="Name:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textname"
+        android:layout_marginTop="4dp"
+        android:hint="xxxxx"
+        android:id="@+id/Edit_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textseats"
+        android:layout_below="@id/Edit_name"
+        android:text="Number of seats:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textseats"
+        android:layout_marginTop="4dp"
+        android:hint="xx"
+        android:id="@+id/Edit_seats"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textemail"
+        android:layout_below="@id/Edit_seats"
+        android:text="Email:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textemail"
+        android:layout_marginTop="4dp"
+        android:hint="xxxxx"
+        android:id="@+id/Edit_email"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textamount"
+        android:layout_below="@id/Edit_email"
+        android:text="Total Amount Paid:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textamount"
+        android:layout_marginTop="4dp"
+        android:hint="xxxxx"
+        android:id="@+id/Edit_amount"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textbalance"
+        android:layout_below="@id/Edit_amount"
+        android:text="Total Amount Paid:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textbalance"
+        android:layout_marginTop="4dp"
+        android:hint="xxxxx"
+        android:id="@+id/Edit_balance"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/priblue"
+        android:text="Confirm Payment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20sp"
+        android:onClick="onClick"/>
+
+
+</RelativeLayout>

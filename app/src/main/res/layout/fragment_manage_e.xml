@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageEFragment">
+
+
+        <TextView
+            android:id="@+id/attend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attendees"
+            android:textSize="25sp"
+            android:onClick="onClick"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/priblue"/>
+
+
+        <TextView
+            android:id="@+id/disc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discussion Forum"
+            android:layout_below="@+id/attend"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:layout_marginTop="15sp"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/priblue"/>
+
+        <TextView
+            android:id="@+id/stat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            android:onClick="onClick"
+            android:textSize="25sp"
+            android:layout_marginTop="15sp"
+            android:layout_below="@+id/disc"
+            android:textStyle="bold"
+            android:textAlignment="textStart"
+            android:textColor="@color/priblue"/>
+
+
+</RelativeLayout>

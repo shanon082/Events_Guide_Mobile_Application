@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateFragment">
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/selectEventSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <ImageView
+                android:id="@+id/editeventImage"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/selectEventSpinner"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/person" />
+
+            <EditText
+                android:id="@+id/editEvent_title"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/editeventImage"
+                android:ems="10"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:layout_height="60sp"
+                android:textColorHint="@color/darkgray"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:hint="Enter title" />
+
+            <EditText
+                android:id="@+id/editEvent_venue"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/editEvent_title"
+                android:ems="10"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:layout_height="60sp"
+                android:textColorHint="@color/darkgray"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:hint="Enter venue" />
+            <EditText
+                android:id="@+id/editEvent_fee"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/editEvent_venue"
+                android:ems="10"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:layout_height="60sp"
+                android:textColorHint="@color/darkgray"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:hint="Enter Fee" />
+            <Spinner
+                android:id="@+id/editEvent_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editEvent_fee"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:hint="Select the category" />
+            <EditText
+                android:id="@+id/editEvent_description"
+                android:layout_width="match_parent"
+                android:layout_height="180sp"
+                android:layout_below="@+id/editEvent_category"
+                android:ems="10"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:textColorHint="@color/darkgray"
+                android:paddingLeft="10dp"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:layout_marginTop="15dp"
+                android:textSize="20sp"
+                android:hint="Description" />
+
+            <EditText
+                android:id="@+id/editEvent_tickets"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/editEvent_description"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:layout_height="60sp"
+                android:textColorHint="@color/darkgray"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:hint="Number of tickets available" />
+            <EditText
+                android:id="@+id/editEvent_email"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/editEvent_tickets"
+                android:ems="10"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:layout_height="60sp"
+                android:textColorHint="@color/darkgray"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:hint="Enter Email" />
+            <EditText
+                android:id="@+id/editEvent_phnumber"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/editEvent_email"
+                android:ems="10"
+                android:background="@drawable/custom_edittext"
+                android:textColor="@color/black"
+                android:layout_height="60sp"
+                android:textColorHint="@color/darkgray"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:inputType="text"
+                android:textSize="20sp"
+                android:hint="Enter Phone Number" />
+
+            <Button
+                android:id="@+id/btn_editevent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Event"
+                android:backgroundTint="@color/priblue"
+                android:textSize="30sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="40dp"
+                android:layout_below="@+id/editEvent_phnumber"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
